@@ -84,7 +84,7 @@ Messages are signed using **RSA private keys** and verified by the server using 
 ---
 
 ## 🧪 Example Packet Format
-```
+```json
 json
 {
   "op": "DHCPDISCOVER",
