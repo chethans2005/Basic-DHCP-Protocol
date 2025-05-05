@@ -17,20 +17,20 @@ This project is a Python-based simulation of the Dynamic Host Configuration Prot
 ---
 
 ## 📂 Project Structure
-
-dhcp-project/
+```sql
+dhcp-project/ 
 ├── client.py          # DHCP client
 ├── server.py          # DHCP server
 ├── dhcp_common.py     # Shared logic (packet creation, RSA signing)
 └── README.md          # This file
-
+```
 ---
 ## ⚙️ Requirements
 
 Install all required libraries via pip:
-
+```bash
 pip install cryptography
-
+```
 
 ---
 
@@ -38,13 +38,13 @@ pip install cryptography
 
 ### Run the Server (first):
 
-bash
+```bash
 python server.py
-
+```
 or try (Linux)
-bash
+```bash
 python3 server.py
-
+```
 
 Server listens on UDP port 67 and responds to client requests.
 
@@ -52,13 +52,13 @@ Server listens on UDP port 67 and responds to client requests.
 
 ### Run the Client:
 
-bash
+```bash
 python client.py
-
+```
 or try (Linux)
-bash
+```bash
 python3 server.py
-
+```
 
 Client initiates DHCPDISCOVER on UDP port 68, requests an IP, and manages lease renewal.
 
